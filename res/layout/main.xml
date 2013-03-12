@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+        >
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Project id"
+            android:digits="0123456789"
+            android:id="@+id/proj_id"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/register"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:id="@+id/register"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true" />
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unregister"
+            android:enabled="false"
+            android:id="@+id/unregister"
+            android:layout_alignLeft="@+id/proj_id"
+            android:layout_below="@+id/proj_id"
+            android:layout_alignRight="@+id/register"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="171dp"
+            android:id="@+id/push_id"
+            android:layout_alignLeft="@+id/proj_id"
+            android:layout_below="@+id/unregister"
+            android:layout_alignRight="@+id/register"
+            android:layout_above="@+id/share" />
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Share"
+            android:id="@+id/share"
+            android:layout_alignRight="@+id/register"
+            android:layout_alignParentBottom="true" android:layout_alignLeft="@+id/proj_id"/>
+</RelativeLayout>
+
