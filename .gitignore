@@ -10,3 +10,5 @@ local.properties
 *.swp
 proguard
 .idea
+.gradle
+build/
